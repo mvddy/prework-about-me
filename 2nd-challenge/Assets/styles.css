@@ -1,0 +1,106 @@
+h1 {
+    font-size: 400%;
+    color: brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+text
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+    color: #fff;
+  }
+
+  nav li::before,
+nav li::after{
+  content: '\2766';
+}
+
+.resources:hover .links {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    }
+
+    nav a:hover {
+        color: #fff;
+      }
+    nav a::before {
+      color: aquamarine;
+    }
+    
+
+      .css_tooltip:hover::before {
+        content: "Cascading Style Sheets";
+        background-color: #13293d;
+        color: #fff;
+        position:absolute; 
+        padding: 3px;
+        left: 0px;
+        font-size: 80%;
+      }
+
+      .css_tooltip {
+        text-decoration: wavy;
+        color: black;
+        cursor: pointer;
+      }
+      .linear-gradient-background {
+        background-image: linear-gradient(
+          rgba(232, 102, 236, 0.3) 0%,
+          rgba(232, 102, 236, 0.6) 100%
+        );
+      }
+      .card-header {
+        position: relative;
+        margin-top: -20px;
+      }
+
+      .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+      }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.column {
+  display: flex;
+  flex-direction: column
+}
+
+.code-card .card-header {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+}
