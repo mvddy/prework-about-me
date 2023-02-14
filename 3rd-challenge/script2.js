@@ -31,7 +31,7 @@ var passwordLength = i=8; i<= 128
       }
       return newPassword;
     }
-return newPassword
+
 
 
 generateBtn.addEventListener("click", writePassword);
