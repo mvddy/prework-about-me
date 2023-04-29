@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuckles</title>
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href= "styles.css">
+</head>
+<!-- choose topic, drop down menu button, add random button -->
+
+<body>
+  <h1>Chuckles</h1>
+  <button >Search for a Location</button>
+  <button >Search Date Range</button>  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Whichever Weather</p>
+      <span class= "5-day" >
+      <form id="search-form" class= "5 or 10 Day" >
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Where 2?">
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="recent-searches">
+        <h2>Recent Searches</h2>
+        <ul id="search-list"></ul>
+        <p>Temperature</p>
+        <p>Description</p>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+  <div id="weather"></div>
+  <div id="holidays"></div>
+</body>

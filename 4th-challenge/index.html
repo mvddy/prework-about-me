@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Coding Questionaire </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <!-- start Quiz button -->
+        <header>
+            <div id="start-button"><button>START</button></div>
+            <div class="title">Coding Questionaire</div>
+            <div id="timer">Time: <span id="time-left"></span></div>
+            <div class="timerSec">15</div>
+            <div class="timeLine"></div>
+        </header>
+        <main>
+    <!-- Info Box -->
+            <div id="quiz" class="hidden">
+                <div id="question"></div>
+                <form>
+                    <input type="question" name="answer" value="0" id="answer0"><label for="answer0" id="answerText0"></label><br>
+                    <input type="question" name="answer" value="1" id="answer1"><label for="answer1" id="answerText1"></label><br>
+                    <input type="question" name="answer" value="2" id="answer2"><label for="answer2" id="answerText2"></label><br>
+                    <input type="question" name="answer" value="3" id="answer3"><label for="answer3" id="answerText3"></label><br>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+            <div id="score-form" class="hidden">
+            <div class="complete">Quiz Over!</div>
+            <p>Your score is <span id="score"></span>.</p>
+            <form>
+                <label class="initials">Enter your initials:</label>
+                <input type="text" id="initials" maxlength="3">
+                <div class="buttons">
+                    <button type="save" id="save">SAVE</button>
+                    <button type="replay" id="replay">REPLAY</button>
+                    <button type="quit" id="quit">QUIT</button>
+                </div>
+            </form>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

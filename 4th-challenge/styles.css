@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Buttons */
+button {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  button:active {
+    transform: translateY(2px);
+  }
+  
+  /* Start button */
+  #start {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Quiz box */
+  #quiz {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 0.25rem;
+  }
+  
+  #question {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .answer-container {
+    margin-bottom: 1rem;
+  }
+  
+  
+  .answer {
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .answer :hover {
+    background-color: #f5f5f5;
+  }
+  
+  input[type="question"]:checked + label[for^="answer"] {
+    border-color: #4caf50;
+    background-color: #e7ffe7;
+  }
+  
+  /* Score form */
+  #score-form {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 0.25rem;
+  }
+  
+  #score-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  #score-form input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #ddd;
+    border-radius: 0.25rem;
+  }
+  
+  #score-form button {
+    margin-top: 1rem;
+  }
+  
+  
+  .quiz {
+    display: none;
+  }
+  
+  .quiz-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .answer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .quiz-answer input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .quiz-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .timer {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .score-form {
+    display: none;
+  }
+  
+  .score-form-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .score-form-input {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .score-form-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .high-scores {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .high-scores-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .high-scores-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .high-scores-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .high-scores-list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .high-scores-list-item-initials {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .high-scores-list-item-score {
+    font-size: 24px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #quiz {
+    margin-top: 40px;
+  }
+  
+  #question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    margin-left: 5px;
+  }
+  
+  #submit {
+    margin-top: 10px;
+  }
+  
+  #timer {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #score-form {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  #score-form label {
+    margin-right: 5px;
+  }
+  
+  #score-form input {
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+  
